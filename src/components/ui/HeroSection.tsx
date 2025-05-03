@@ -37,12 +37,9 @@ const HeroSection = () => {
           <div className="absolute -bottom-10 -right-10 w-60 h-60 border border-vr-neon/20 rounded-full animate-rotate-slow opacity-20" style={{ animationDirection: 'reverse' }}></div>
           
           <div className="bg-black/30 backdrop-blur-sm border border-vr-neon/30 rounded-lg p-1 shadow-neon relative overflow-hidden">
-            <img 
-              src="/lovable-uploads/14eaee63-8ab1-46db-abf1-4186a9f37dc5.png" 
-              alt="VR Interface" 
-              className="w-full rounded object-cover"
-              style={{ maxHeight: '400px', objectPosition: 'top' }}
-            />
+            <div className="w-full rounded h-[400px] bg-gradient-to-b from-vr-blue-dark/40 to-vr-purple/40 flex items-center justify-center">
+              <div className="text-vr-neon font-bold text-2xl">Immersive VR Experience</div>
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-vr-dark to-transparent opacity-40"></div>
           </div>
         </div>
