@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,12 +19,22 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'orbitron': ['Orbitron', 'sans-serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
+				'vr-dark': 'hsl(var(--vr-dark))',
+				'vr-darker': 'hsl(var(--vr-darker))',
+				'vr-neon': 'hsl(var(--vr-neon))',
+				'vr-blue-dark': 'hsl(var(--vr-blue-dark))',
+				'vr-blue-light': 'hsl(var(--vr-blue-light))',
+				'vr-purple': 'hsl(var(--vr-purple))',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -63,6 +74,16 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				}
 			},
+			backgroundImage: {
+				'cyber-gradient': 'linear-gradient(135deg, rgba(5, 12, 29, 0.9), rgba(0, 0, 0, 0.95))',
+				'neon-glow': 'linear-gradient(90deg, rgba(30, 174, 219, 0), rgba(30, 174, 219, 0.5), rgba(30, 174, 219, 0))',
+				'card-gradient': 'linear-gradient(145deg, rgba(23, 33, 51, 0.8), rgba(7, 14, 29, 0.9))',
+			},
+			boxShadow: {
+				'neon': '0 0 5px rgba(30, 174, 219, 0.7), 0 0 10px rgba(30, 174, 219, 0.5)',
+				'neon-strong': '0 0 10px rgba(30, 174, 219, 0.9), 0 0 20px rgba(30, 174, 219, 0.7)',
+				'inner-neon': 'inset 0 0 5px rgba(30, 174, 219, 0.7), inset 0 0 10px rgba(30, 174, 219, 0.5)',
+			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
@@ -84,11 +105,30 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+                'float': {
+                    '0%, 100%': { transform: 'translateY(0)' },
+                    '50%': { transform: 'translateY(-10px)' }
+                },
+                'pulse-glow': {
+                    '0%, 100%': { 
+                        boxShadow: '0 0 5px rgba(30, 174, 219, 0.7), 0 0 10px rgba(30, 174, 219, 0.5)'
+                    },
+                    '50%': { 
+                        boxShadow: '0 0 10px rgba(30, 174, 219, 0.9), 0 0 20px rgba(30, 174, 219, 0.7), 0 0 30px rgba(30, 174, 219, 0.5)'
+                    }
+                },
+                'rotate-slow': {
+                    '0%': { transform: 'rotate(0deg)' },
+                    '100%': { transform: 'rotate(360deg)' }
+                }
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+                'float': 'float 6s ease-in-out infinite',
+                'pulse-glow': 'pulse-glow 3s ease-in-out infinite',
+                'rotate-slow': 'rotate-slow 20s linear infinite'
 			}
 		}
 	},
