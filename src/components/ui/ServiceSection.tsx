@@ -1,12 +1,12 @@
 
 import React from 'react';
-import { Cube, Users, Smartphone, View } from 'lucide-react';
+import { Box, Users, Smartphone, Eye } from 'lucide-react';
 
 const services = [
   {
     title: '3D Apps',
     description: 'Create immersive 3D applications for virtual reality environments with realistic physics and interactions.',
-    icon: Cube,
+    icon: Box,
   },
   {
     title: 'Tested with Users',
@@ -21,7 +21,7 @@ const services = [
   {
     title: '360° Virtual Tours',
     description: 'Develop immersive virtual tours with 360-degree views and interactive hotspots for exploration.',
-    icon: View,
+    icon: Eye,
   },
 ];
 
