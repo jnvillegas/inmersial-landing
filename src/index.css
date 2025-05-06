@@ -1,6 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -113,17 +114,17 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-orbitron;
+    @apply font-spartan;
   }
 }
 
 @layer utilities {
   .neon-glow {
-    text-shadow: 0 0 10px theme('colors.vr-neon'), 0 0 20px theme('colors.vr-neon');
+    text-shadow: 0 0 10px theme('colors.inmersial-light-blue'), 0 0 20px theme('colors.inmersial-cyan');
   }
   
   .neon-border {
-    box-shadow: 0 0 5px theme('colors.vr-neon'), 0 0 10px theme('colors.vr-neon');
+    box-shadow: 0 0 5px theme('colors.inmersial-light-blue'), 0 0 10px theme('colors.inmersial-cyan');
   }
   
   .hexagon {
@@ -131,11 +132,11 @@
   }
   
   .glow-effect {
-    box-shadow: 0 0 15px rgba(30, 174, 219, 0.5);
+    box-shadow: 0 0 15px rgba(100, 173, 242, 0.5);
   }
   
   .cyber-gradient {
-    background: linear-gradient(135deg, rgba(30, 174, 219, 0.2), rgba(116, 0, 255, 0.1));
+    background: linear-gradient(135deg, rgba(8, 44, 116, 0.2), rgba(0, 0, 0, 0.95));
   }
   
   .neon-button {
@@ -151,7 +152,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(rgba(30, 174, 219, 0.1), transparent);
+    background: linear-gradient(rgba(100, 173, 242, 0.1), transparent);
     transform: rotate(45deg);
     opacity: 0;
     transition: opacity 0.3s ease;

@@ -5,8 +5,6 @@ import HeroSection from '@/components/ui/HeroSection';
 import ServiceSection from '@/components/ui/ServiceSection';
 import ProductSection from '@/components/ui/ProductSection';
 import VideoSection from '@/components/ui/VideoSection';
-import ControllerSection from '@/components/ui/ControllerSection';
-import GiftBoxSection from '@/components/ui/GiftBoxSection';
 import SubscriptionSection from '@/components/ui/SubscriptionSection';
 import DemoSection from '@/components/ui/DemoSection';
 import ReviewSection from '@/components/ui/ReviewSection';
@@ -20,8 +18,6 @@ const Index = () => {
       <ServiceSection />
       <ProductSection />
       <VideoSection />
-      <ControllerSection />
-      <GiftBoxSection />
       <DemoSection />
       <SubscriptionSection />
       <ReviewSection />

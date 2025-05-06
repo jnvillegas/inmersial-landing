@@ -22,6 +22,7 @@ export default {
 			fontFamily: {
 				'orbitron': ['Orbitron', 'sans-serif'],
 				'inter': ['Inter', 'sans-serif'],
+				'spartan': ['League Spartan', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
@@ -35,6 +36,10 @@ export default {
 				'vr-blue-dark': 'hsl(var(--vr-blue-dark))',
 				'vr-blue-light': 'hsl(var(--vr-blue-light))',
 				'vr-purple': 'hsl(var(--vr-purple))',
+				'inmersial-dark-blue': '#082c74',
+				'inmersial-light-blue': '#64adf2',
+				'inmersial-cyan-light': '#6eeef9',
+				'inmersial-cyan': '#74fdff',
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
 					foreground: 'hsl(var(--primary-foreground))'
@@ -78,11 +83,14 @@ export default {
 				'cyber-gradient': 'linear-gradient(135deg, rgba(5, 12, 29, 0.9), rgba(0, 0, 0, 0.95))',
 				'neon-glow': 'linear-gradient(90deg, rgba(30, 174, 219, 0), rgba(30, 174, 219, 0.5), rgba(30, 174, 219, 0))',
 				'card-gradient': 'linear-gradient(145deg, rgba(23, 33, 51, 0.8), rgba(7, 14, 29, 0.9))',
+				'inmersial-gradient': 'linear-gradient(135deg, #082c74 0%, #64adf2 100%)',
+				'inmersial-button': 'linear-gradient(90deg, #64adf2 0%, #6eeef9 100%)',
 			},
 			boxShadow: {
 				'neon': '0 0 5px rgba(30, 174, 219, 0.7), 0 0 10px rgba(30, 174, 219, 0.5)',
 				'neon-strong': '0 0 10px rgba(30, 174, 219, 0.9), 0 0 20px rgba(30, 174, 219, 0.7)',
 				'inner-neon': 'inset 0 0 5px rgba(30, 174, 219, 0.7), inset 0 0 10px rgba(30, 174, 219, 0.5)',
+				'inmersial': '0 0 5px rgba(100, 173, 242, 0.7), 0 0 10px rgba(100, 173, 242, 0.5)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -112,10 +120,10 @@ export default {
                 },
                 'pulse-glow': {
                     '0%, 100%': { 
-                        boxShadow: '0 0 5px rgba(30, 174, 219, 0.7), 0 0 10px rgba(30, 174, 219, 0.5)'
+                        boxShadow: '0 0 5px rgba(100, 173, 242, 0.7), 0 0 10px rgba(100, 173, 242, 0.5)'
                     },
                     '50%': { 
-                        boxShadow: '0 0 10px rgba(30, 174, 219, 0.9), 0 0 20px rgba(30, 174, 219, 0.7), 0 0 30px rgba(30, 174, 219, 0.5)'
+                        boxShadow: '0 0 10px rgba(100, 173, 242, 0.9), 0 0 20px rgba(100, 173, 242, 0.7), 0 0 30px rgba(100, 173, 242, 0.5)'
                     }
                 },
                 'rotate-slow': {
