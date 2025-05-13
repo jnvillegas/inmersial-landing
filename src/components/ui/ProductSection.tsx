@@ -14,7 +14,7 @@ const ProductSection = () => {
       <div className="container mx-auto px-6 z-10 relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            VR <span className="text-vr-neon neon-glow">Design</span>
+            VR <span className="text-vr-neon ">Design</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Experience reality reimagined with our state-of-the-art VR headsets,
@@ -25,7 +25,7 @@ const ProductSection = () => {
         {/* Product 1 - Image on the right */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="order-2 lg:order-1">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+            <h3 className="text-3xl md:text-3xl  mb-4 text-white">
               Wear it with ease and comfort
             </h3>
             <p className="text-gray-300 mb-6">
@@ -34,10 +34,11 @@ const ProductSection = () => {
               during long immersive experiences, while breathable materials keep you 
               cool and comfortable.
             </p>
+            {/*}
             <button className="group flex items-center font-semibold text-vr-neon hover:text-white transition-colors">
               Learn More 
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+            </button>*/}
           </div>
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
             <div className="relative">
@@ -66,7 +67,7 @@ const ProductSection = () => {
             </div>
           </div>
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">
+            <h3 className="text-3xl md:text-3xl  mb-4 text-white">
               A fitting design
             </h3>
             <p className="text-gray-300 mb-6">
@@ -75,10 +76,10 @@ const ProductSection = () => {
               your movements translate instantly into the virtual world, 
               creating a truly immersive experience.
             </p>
-            <button className="group flex items-center font-semibold text-vr-neon hover:text-white transition-colors">
+            {/*<button className="group flex items-center font-semibold text-vr-neon hover:text-white transition-colors">
               Learn More 
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
-            </button>
+            </button>*/}
           </div>
         </div>
       </div>

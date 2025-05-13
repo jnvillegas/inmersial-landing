@@ -36,8 +36,8 @@ const ServiceSection = () => {
       
       <div className="container mx-auto px-6 z-10 relative">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Our <span className="text-vr-neon neon-glow">VR Services</span>
+          <h2 className="text-3xl md:text-4xl  mb-4 text-white font-bold">
+            Our <span className="text-vr-neon ">Services</span> 
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Explore our range of virtual reality solutions designed to transform how you interact with digital content.
@@ -53,12 +53,14 @@ const ServiceSection = () => {
               <div className="flex flex-col items-center">
                 {/* Hexagon container with border */}
                 <div className="relative mb-6 transition-transform duration-300 transform group-hover:scale-105">
-                  <div className="hexagon w-32 h-32 bg-card-gradient border border-vr-neon/40 flex items-center justify-center shadow-neon group-hover:shadow-neon-strong transition-shadow duration-300">
+                  <div className="hexagon w-36 h-36 bg-card-gradient  flex items-center justify-center shadow-neon group-hover:shadow-neon-strong transition-shadow duration-300">
+                  <div className="hexagon w-32 h-32 bg-vr-blue-light/10 flex items-center justify-center">
                     <service.icon size={48} className="text-vr-neon" />
+                    </div>
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold mb-2 text-white group-hover:text-vr-neon transition-colors">
+                <h3 className="text-3xl  mb-2 text-white group-hover:text-vr-neon transition-colors">
                   {service.title}
                 </h3>
                 <p className="text-gray-400 text-center max-w-xs">

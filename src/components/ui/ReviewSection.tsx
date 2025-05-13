@@ -55,13 +55,13 @@ const ReviewSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Customer <span className="text-vr-neon neon-glow">Reviews</span>
+            Customer <span className="text-vr-neon ">Reviews</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             See what our customers are saying about their VR experience with our products.
           </p>
         </div>
-        
+       {/*
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-2">
             <div className="flex">
@@ -85,7 +85,7 @@ const ReviewSection = () => {
             </select>
           </div>
         </div>
-        
+        */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {sortedReviews.map((review) => (
             <div key={review.id} className="bg-card-gradient rounded-lg p-6 border border-gray-800">
@@ -137,9 +137,9 @@ const ReviewSection = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <button className="bg-transparent border border-vr-neon text-vr-neon hover:bg-vr-neon/10 transition-colors py-2 px-6 rounded-md">
+         {/*} <button className="bg-transparent border border-vr-neon text-vr-neon hover:bg-vr-neon/10 transition-colors py-2 px-6 rounded-md">
             Load More Reviews
-          </button>
+          </button>*/}
         </div>
       </div>
     </section>

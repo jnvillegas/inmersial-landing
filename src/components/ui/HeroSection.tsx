@@ -16,21 +16,21 @@ const HeroSection = () => {
       </div>
       
       {/* Content container */}
-      <div className="container mx-auto px-6 z-10 text-center">
+      <div className="container mx-auto py-20 px-6 z-10 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white">
           Create Interactive
-          <span className="block text-inmersial-light-blue neon-glow">VR Experiences</span>
+          <span className="block text-inmersial-light-blue ">VR Experiences</span>
         </h1>
         
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10">
           Dive into an ever-evolving digital realm where your creativity knows no bounds. 
           Experience a world beyond reality with our cutting-edge VR technology.
         </p>
-        
-        <button className="bg-gradient-to-r from-inmersial-light-blue to-inmersial-cyan hover:opacity-90 text-inmersial-dark-blue font-semibold py-3 px-8 rounded-lg 
-                         shadow-inmersial neon-button transition-all duration-300 transform hover:scale-105">
+        {/*}
+        <button className="bg-blue-900  hover:opacity-90 text-inmersial-white font-semibold py-2 px-12 rounded-sm 
+                         shadow-inmersial  transition-all duration-300 transform hover:scale-105">
           Buy Now
-        </button>
+        </button>*/}
         
         <div className="mt-20 max-w-6xl mx-auto relative">
           <div className="absolute -top-10 -left-10 w-40 h-40 border border-inmersial-light-blue/30 rounded-full animate-rotate-slow opacity-30"></div>
@@ -38,7 +38,9 @@ const HeroSection = () => {
           
           <div className="bg-black/30 backdrop-blur-sm border border-inmersial-light-blue/30 rounded-lg p-1 shadow-inmersial relative overflow-hidden">
             <div className="w-full rounded h-[400px] bg-gradient-to-b from-inmersial-dark-blue/40 to-inmersial-light-blue/40 flex items-center justify-center">
-              <div className="text-inmersial-cyan font-bold text-2xl">Immersive VR Experience</div>
+              {/*<div className="text-inmersial-cyan font-bold text-2xl">https://designer.inmersial.com.ar/player/1qGjbzBZYtVwzWxe8UxiximUt6pip59Ci</div>*/}
+              <iframe className="w-full h-full aspect-auto " src="https://designer.inmersial.com.ar/player/1qGjbzBZYtVwzWxe8UxiximUt6pip59Ci"></iframe>
+
             </div>
             <div className="absolute inset-0 bg-gradient-to-t from-vr-dark to-transparent opacity-40"></div>
           </div>

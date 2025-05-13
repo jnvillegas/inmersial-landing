@@ -85,13 +85,13 @@ const SubscriptionSection = () => {
       <div className="container mx-auto px-6 z-10 relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            <span className="text-vr-neon neon-glow">Subscribe</span> to VR Excellence
+            <span className="text-vr-neon ">Subscribe</span> to VR Excellence
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
             Choose the perfect plan to unlock your virtual reality journey.
             All subscriptions include access to our basic app library and regular updates.
           </p>
-          
+          {/*}
           <div className="mt-6">
             <button 
               onClick={() => setShowComparison(!showComparison)}
@@ -100,8 +100,8 @@ const SubscriptionSection = () => {
               {showComparison ? 'Hide comparison table' : 'Compare all plans'}
             </button>
           </div>
-          
-          {showComparison && <ComparisonTool setActivePlan={setActivePlan} />}
+          */}
+        {/*  {showComparison && <ComparisonTool setActivePlan={setActivePlan} />}*/}
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
