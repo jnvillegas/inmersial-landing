@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "product": "Producto",
+    "service": "Servicio",
+    "subscriptions": "Suscripciones",
+    "testimonials": "Testimonios",
+    "signin": "Iniciar sesión"
+  },
+  "footer": {
+    "buyNow": "Comprar ahora"
+  }
+}

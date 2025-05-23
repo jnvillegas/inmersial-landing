@@ -25,17 +25,6 @@ const reviews = [
     helpful: 18,
     product: "Pro VR Headset"
   },
-  {
-    id: 3,
-    name: "Michael Chen",
-    avatar: "https://randomuser.me/api/portraits/men/67.jpg",
-    rating: 5,
-    date: "2025-03-28",
-    title: "Worth every penny",
-    content: "The controllers are incredibly intuitive and the haptic feedback adds another layer of immersion. I've tried other VR systems but this one takes the cake for comfort during extended sessions. The software library is extensive and growing.",
-    helpful: 31,
-    product: "Pro VR Controllers"
-  }
 ];
 
 const ReviewSection = () => {
@@ -55,10 +44,10 @@ const ReviewSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Customer <span className="text-vr-neon ">Reviews</span>
+          Opiniones  <span className="text-vr-neon ">de los clientes</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            See what our customers are saying about their VR experience with our products.
+          Vea lo que dicen nuestros clientes sobre su experiencia de RV con nuestros productos.
           </p>
         </div>
        {/*

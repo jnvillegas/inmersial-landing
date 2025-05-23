@@ -18,13 +18,14 @@ const HeroSection = () => {
       {/* Content container */}
       <div className="container mx-auto py-20 px-6 z-10 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white">
-          Create Interactive
-          <span className="block text-inmersial-light-blue ">VR Experiences</span>
+        La Revolución Inmersiva
+        <span className="block text-inmersial-light-blue ">Que Tu Marca Necesita</span>
         </h1>
         
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-          Dive into an ever-evolving digital realm where your creativity knows no bounds. 
-          Experience a world beyond reality with our cutting-edge VR technology.
+        Desde tu móvil, y en minutos, transforma cualquier
+         producto en un recorrido 3D que vende solo. Inmersial lo hace posible
+
         </p>
         {/*}
         <button className="bg-blue-900  hover:opacity-90 text-inmersial-white font-semibold py-2 px-12 rounded-sm 
@@ -37,12 +38,10 @@ const HeroSection = () => {
           <div className="absolute -bottom-10 -right-10 w-60 h-60 border border-inmersial-light-blue/20 rounded-full animate-rotate-slow opacity-20" style={{ animationDirection: 'reverse' }}></div>
           
           <div className="bg-black/30 backdrop-blur-sm border border-inmersial-light-blue/30 rounded-lg p-1 shadow-inmersial relative overflow-hidden">
-            <div className="w-full rounded h-[400px] bg-gradient-to-b from-inmersial-dark-blue/40 to-inmersial-light-blue/40 flex items-center justify-center">
-              {/*<div className="text-inmersial-cyan font-bold text-2xl">https://designer.inmersial.com.ar/player/1qGjbzBZYtVwzWxe8UxiximUt6pip59Ci</div>*/}
-              <iframe className="w-full h-full aspect-auto " src="https://designer.inmersial.com.ar/player/1qGjbzBZYtVwzWxe8UxiximUt6pip59Ci"></iframe>
+            <div className="w-full rounded h-[400px] bg-gradient-to-b from-inmersial-dark-blue/40 to-inmersial-light-blue/40 flex items-center justify-center relative z-10">
+              <iframe className="w-full h-full aspect-auto " src="https://designer.inmersial.com.ar/player/52d427ee-d7f9-4e40-8808-6f79588dcbfe"></iframe>
 
             </div>
-            <div className="absolute inset-0 bg-gradient-to-t from-vr-dark to-transparent opacity-40"></div>
           </div>
         </div>
       </div>

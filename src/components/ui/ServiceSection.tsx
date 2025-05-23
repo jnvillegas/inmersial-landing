@@ -1,34 +1,32 @@
 
-import React from 'react';
 import { Box, Users, Smartphone, Eye } from 'lucide-react';
 
 const services = [
   {
-    title: '3D Apps',
-    description: 'Create immersive 3D applications for virtual reality environments with realistic physics and interactions.',
+    title: 'Smart',
+    description: 'Tecnología inteligente al servicio de tu marca. Analiza métricas y mejora la experiencia del usuario.',
     icon: Box,
   },
   {
-    title: 'Tested with Users',
-    description: 'All our products undergo extensive user testing to ensure an intuitive and comfortable experience.',
+    title: 'Plug & Play',
+    description: 'Sin complicaciones técnicas: activa tu showroom en minutos. Inmersial se integra fácil y rápido, listo para usar.',
     icon: Users,
   },
   {
-    title: 'Mobile Integration',
-    description: 'Seamlessly integrate VR experiences with mobile devices for wider accessibility and convenience.',
+    title: 'User Friendly',
+    description: 'Navegación intuitiva. Diseñada para ofrecer una experiencia envolvente, sin curvas de aprendizaje.',
     icon: Smartphone,
   },
   {
-    title: '360° Virtual Tours',
-    description: 'Develop immersive virtual tours with 360-degree views and interactive hotspots for exploration.',
+    title: 'Cross Platform',
+    description: 'Tu recorrido 360° se adapta perfectamente a móviles, ordenadores y gafas VR, sin apps ni descargas.',
     icon: Eye,
   },
 ];
 
 const ServiceSection = () => {
   return (
-    <section id="services" className="py-20 bg-cyber-gradient relative overflow-hidden">
-      {/* Background elements */}
+    <section id="services" className="py-20 bg-cyber-gradient bg-opacity-80 relative overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div className="absolute top-1/3 right-1/4 w-32 h-32 bg-vr-neon/5 rounded-full filter blur-3xl"></div>
         <div className="absolute bottom-1/4 left-1/3 w-44 h-44 bg-vr-neon/5 rounded-full filter blur-3xl"></div>
@@ -37,11 +35,9 @@ const ServiceSection = () => {
       <div className="container mx-auto px-6 z-10 relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl  mb-4 text-white font-bold">
-            Our <span className="text-vr-neon ">Services</span> 
+          Genera conexiones únicas
+          <span className="block text-vr-neon ">y optimiza tus ventas</span> 
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            Explore our range of virtual reality solutions designed to transform how you interact with digital content.
-          </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
@@ -55,15 +51,15 @@ const ServiceSection = () => {
                 <div className="relative mb-6 transition-transform duration-300 transform group-hover:scale-105">
                   <div className="hexagon w-36 h-36 bg-card-gradient  flex items-center justify-center shadow-neon group-hover:shadow-neon-strong transition-shadow duration-300">
                   <div className="hexagon w-32 h-32 bg-vr-blue-light/10 flex items-center justify-center">
-                    <service.icon size={48} className="text-vr-neon" />
+                    <service.icon size={45} className="text-vr-neon" />
                     </div>
                   </div>
                 </div>
                 
-                <h3 className="text-3xl  mb-2 text-white group-hover:text-vr-neon transition-colors">
+                <h3 className="text-2xl  mb-2 text-white group-hover:text-vr-neon transition-colors font-bold">
                   {service.title}
                 </h3>
-                <p className="text-gray-400 text-center max-w-xs">
+                <p className="text-gray-400 text-center max-w-xs text-sm">
                   {service.description}
                 </p>
               </div>

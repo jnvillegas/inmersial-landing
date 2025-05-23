@@ -1,31 +1,33 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
+
 
 const Navbar = () => {
   return (
-    <nav className="bg-gradient-to-b from-inmersial-dark-blue to-transparent py-3 px-6 md:px-10 fixed w-full top-0 z-50">
+    <nav className="bg-gradient-to-b from-inmersial-dark-blue to-transparent py-3 px-6 md:px-10 fixed w-full top-0 z-50 backdrop-blur-md">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
           <div className="flex items-center">
-          <img className="h-auto max-w-xs" src="/IsoLogo v4 Horizontal .png" />
-
-           
+          <img className="h-auto w-[250px]" src="/22 - IsoLogo vBlanco Horizontal (1).png" />         
           </div>
         </div>
         
-        <div className="hidden md:flex items-center space-x-8">
-          <a href="#products" className="text-white hover:text-inmersial-cyan transition-colors">Products</a>
-          <a href="#services" className="text-white hover:text-inmersial-cyan transition-colors">Services</a>
-          <a href="#pricing" className="text-white hover:text-inmersial-cyan transition-colors">Pricing</a>
-          <a href="#contact" className="text-white hover:text-inmersial-cyan transition-colors">Support</a>
+        <div className="hidden md:flex items-center space-x-8 text-[20px] ">
+          <a href="#products" className="text-white hover:text-inmersial-cyan transition-colors">Producto</a>
+          <a href="#services" className="text-white hover:text-inmersial-cyan transition-colors">Servicio</a>
+          <a href="#pricing" className="text-white hover:text-inmersial-cyan transition-colors">Suscripciones</a>
+          <a href="#contact" className="text-white hover:text-inmersial-cyan transition-colors">Testimonios</a>
+
         </div>
         
-        <div>
-          <button className="bg-transparent border border-inmersial-light-blue text-inmersial-light-blue hover:bg-inmersial-light-blue/10 transition-colors py-2 px-4 rounded-md flex items-center neon-button">
+        <div className="hidden md:flex items-center space-x-6">
+          <button className="bg-transparent border border-inmersial-light-blue text-inmersial-light-blue hover:bg-inmersial-light-blue/10 transition-colors py-1 px-2 rounded-md flex items-center neon-button">
             Sign In
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>
+          <LanguageSwitcher />
         </div>
       </div>
     </nav>

@@ -14,11 +14,11 @@ const ProductSection = () => {
       <div className="container mx-auto px-6 z-10 relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            VR <span className="text-vr-neon ">Design</span>
+            Diseñador de  <span className="block text-vr-neon ">Experiencias Inmersivas</span>
           </h2>
-          <p className="text-gray-300 max-w-2xl mx-auto">
-            Experience reality reimagined with our state-of-the-art VR headsets,
-            engineered for comfort and immersion.
+          <p className="text-gray-300 max-w-xl mx-auto text-sm">
+          Experimente la realidad reimaginada con nuestros cascos de RV de última generación,
+           diseñados para ofrecer comodidad e inmersión.
           </p>
         </div>
         
@@ -26,15 +26,13 @@ const ProductSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="order-2 lg:order-1">
             <h3 className="text-3xl md:text-3xl  mb-4 text-white">
-              Wear it with ease and comfort
+            Llévelo con facilidad y comodidad
             </h3>
             <p className="text-gray-300 mb-6">
-              Our VR headsets are designed with extended play sessions in mind. 
-              The ergonomic fit distributes weight evenly, preventing neck strain 
-              during long immersive experiences, while breathable materials keep you 
-              cool and comfortable.
+            Nuestros cascos de RV se han diseñado pensando en sesiones de juego prolongadas. 
+            El ajuste ergonómico distribuye el peso uniformemente, evitando la tensión en el cuello durante largas experiencias de inmersión, mientras que los materiales transpirables te mantienen fresco y cómodo.
             </p>
-            {/*}
+            {/*
             <button className="group flex items-center font-semibold text-vr-neon hover:text-white transition-colors">
               Learn More 
               <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
@@ -68,13 +66,10 @@ const ProductSection = () => {
           </div>
           <div>
             <h3 className="text-3xl md:text-3xl  mb-4 text-white">
-              A fitting design
+            Un diseño adecuado
             </h3>
             <p className="text-gray-300 mb-6">
-              Experience crystal-clear visuals with our high-resolution displays 
-              that eliminate the screen door effect. Precise motion tracking ensures 
-              your movements translate instantly into the virtual world, 
-              creating a truly immersive experience.
+            Disfrute de imágenes nítidas con nuestras pantallas de alta resolución que eliminan el efecto de puerta de pantalla. El preciso seguimiento del movimiento garantiza que tus movimientos se trasladen instantáneamente al mundo virtual, creando una experiencia realmente envolvente.
             </p>
             {/*<button className="group flex items-center font-semibold text-vr-neon hover:text-white transition-colors">
               Learn More 
