@@ -1,12 +1,11 @@
 {
-  "navbar": {
-    "product": "Product",
-    "service": "Service",
-    "subscriptions": "Subscriptions",
-    "testimonials": "Testimonials",
-    "signin": "Sign In"
-  },
-  "footer": {
-    "buyNow": "Buy Now"
-  }
+  "product": "Product",
+  "service": "Service",
+  "subscriptions": "Subscriptions",
+  "testimonials": "Testimonials",
+  "sign_in": "Sign In",
+  "hero_title": "The Immersive Revolution",
+  "hero_title_secondary": "Your Brand Needs",
+  "hero_subtitle": "From your mobile, in minutes, turn any product into a 3D tour that sells itself. Inmersial makes it possible",
+  "hero_cta": "Request demo"
 }

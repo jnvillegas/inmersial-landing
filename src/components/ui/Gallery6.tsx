@@ -31,43 +31,43 @@ const Gallery6 = ({
   items = [
     {
       id: "item-1",
-      title: "Build Modern UIs",
+      title: "The Rider Residences",
       summary:
-        "Create stunning user interfaces with our comprehensive design system.",
-      url: "#",
-      image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+        "The Rider Residences Miami is an avant-garde condominium developed by the Miami-based Rilea Group, is poised to redefine luxury living in Miami’s most vibrant district. This 12-story boutique building features 146 turnkey units, uniquely blending high-end living and rock-n-roll heritage. The Rider at Wynwood is not just a residence; it’s a testament to its neighborhood’s freedom and rebellious spirit.",
+      url: "https://designer.inmersial.com.ar/player/7edcf188-92d6-4f3f-8c64-1001ad7ef813",
+      image: "http://griftin.com.ar/wp-content/uploads/2025/05/proyectos-theriders.jpg",
     },
     {
       id: "item-2",
-      title: "Computer Vision Technology",
+      title: "Optimar, Miami - Collins Ave 15811-Apt 603",
       summary:
-        "Powerful image recognition and processing capabilities that allow AI systems to analyze, understand, and interpret visual information from the world.",
-      url: "#",
-      image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+        "Descubre tu futuro hogar en Miami con nuestro recorrido inmersivo 360° de Optimar y su increíble vista al mar. Explora cada rincón, desde la comodidad de tu dispositivo. ¡Haz clic y comienza la experiencia!",
+      url: "https://designer.inmersial.com.ar/player/5a6e0ee1-159a-4834-a93a-87ab82f68d6d",
+      image: "http://griftin.com.ar/wp-content/uploads/2025/04/proyectos-Optimar.jpg",
     },
     {
       id: "item-3",
-      title: "Machine Learning Automation",
+      title: "STARTUP OLÉ MIAMI'25",
       summary:
-        "Self-improving algorithms that learn from data patterns to automate complex tasks and make intelligent decisions with minimal human intervention.",
-      url: "#",
-      image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+        "STARTUP OLÉ MIAMI'25 THE ARGEST TECH EVENT",
+      url: "https://designer.inmersial.com.ar/player/1I7u65ZjsB2kp8kBN45Nn_Bx1LRZCPeq8",
+      image: "http://griftin.com.ar/wp-content/uploads/2025/03/slider-2-servicio.jpeg",
     },
     {
       id: "item-4",
-      title: "Predictive Analytics",
+      title: "AGN Desarrollo y Arquitectura – AIRES DEL CERRO - 1 Dormitorio",
       summary:
-        "Advanced forecasting capabilities that analyze historical data to predict future trends and outcomes, helping businesses make data-driven decisions.",
+        "Descubre la armonía entre naturaleza y diseño en este departamento de 1 dormitorio en AIRES DEL CERRO. Este recorrido 360° te invita a explorar un espacio pensado para quienes buscan un estilo de vida relajado y conectado con el entorno",
       url: "#",
       image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
     },
     {
       id: "item-5",
-      title: "Neural Network Architecture",
+      title: "AGN Desarrollo y Arquitectura – TORRE ALBERDI - avance de obra - julio 2024",
       summary:
-        "Sophisticated AI models inspired by human brain structure, capable of solving complex problems through deep learning and pattern recognition.",
-      url: "#",
-      image: "https://shadcnblocks.com/images/block/placeholder-dark-1.svg",
+        "Acompáñanos en esta exclusiva recorrida de obra de TORRE ALBERDI. Este recorrido 360° te ofrece una visión detallada del progreso, la calidad y la dedicación que estamos invirtiendo en la construcción de tu futuro hogar",
+      url: "https://designer.inmersial.com.ar/player/1qGjbzBZYtVwzWxe8UxiximUt6pip59Ci",
+      image: "http://griftin.com.ar/wp-content/uploads/2025/03/ObraTorreAlberdi-proyecto.jpg",
     },
   ],
 }: Gallery6Props) => {
@@ -170,7 +170,7 @@ const Gallery6 = ({
                     {item.summary}
                   </div>
                   <div className="flex items-center text-sm">
-                    Read more{" "}
+                   Ver experiencia{" "}
                     <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </a>

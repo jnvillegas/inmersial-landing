@@ -1,12 +1,11 @@
 {
-  "navbar": {
-    "product": "Producto",
-    "service": "Servicio",
-    "subscriptions": "Suscripciones",
-    "testimonials": "Testimonios",
-    "signin": "Iniciar sesión"
-  },
-  "footer": {
-    "buyNow": "Comprar ahora"
-  }
+  "product": "Producto",
+  "service": "Servicio",
+  "subscriptions": "Suscripciones",
+  "testimonials": "Testimonios",
+  "sign_in": "Iniciar sesión",
+  "hero_title": "La Revolución Inmersiva",
+  "hero_title_secondary": "Que Tu Marca Necesita",
+  "hero_subtitle": "Desde tu móvil, y en minutos, transforma cualquier producto en un recorrido 3D que vende solo. Inmersial lo hace posible",
+  "hero_cta": "Solicitar demo"
 }

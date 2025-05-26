@@ -1,8 +1,12 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
+
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="relative min-h-screen pt-20 pb-10 flex items-center justify-center overflow-hidden bg-cyber-gradient">
       {/* Background elements */}
@@ -18,13 +22,12 @@ const HeroSection = () => {
       {/* Content container */}
       <div className="container mx-auto py-20 px-6 z-10 text-center">
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 text-white">
-        La Revolución Inmersiva
-        <span className="block text-inmersial-light-blue ">Que Tu Marca Necesita</span>
+        {t('hero_title')}
+        <span className="block text-inmersial-light-blue ">{t('hero_title_secondary')}</span>
         </h1>
         
         <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-10">
-        Desde tu móvil, y en minutos, transforma cualquier
-         producto en un recorrido 3D que vende solo. Inmersial lo hace posible
+        {t('hero_subtitle')}
 
         </p>
         {/*}
