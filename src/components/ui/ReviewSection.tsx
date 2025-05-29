@@ -1,35 +1,38 @@
 
 import React, { useState } from 'react';
-import { Star } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const reviews = [
   {
     id: 1,
-    name: "Alex Thompson",
-    avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+    name: "FELIPE SEIA",
+    avatar: "../public/felipeseia.png",
     rating: 5,
     date: "2025-04-15",
     title: "Game-changing VR technology",
-    content: "The immersive experience provided by this VR headset is unlike anything I've tried before. The graphics are crystal clear, and the motion tracking is incredibly responsive. I've been using it for gaming and virtual travel experiences, and it's been mind-blowing.",
+    content: "reviews.1.content",
     helpful: 24,
-    product: "Pro VR Headset"
+    product: "Pro VR Headset",
+    role:"Gerente de Marketing de AGN Corp"
   },
   {
     id: 2,
-    name: "Samantha Lee",
-    avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+    name: "Alina Nowaczek",
+    avatar: "../public/foto alina.png",
     rating: 4,
     date: "2025-04-02",
     title: "Great for work and entertainment",
-    content: "I primarily bought this for architectural visualizations for my work, but I've found myself using it for entertainment just as much. The only reason it's not 5 stars is because the battery life could be better, but overall it's an excellent product.",
+    content: "reviews.2.content",
     helpful: 18,
-    product: "Pro VR Headset"
+    product: "Pro VR Headset",
+    role:"CEO Transcontinental Trade Consortium LLC,"
   },
 ];
 
 const ReviewSection = () => {
   const [sortBy, setSortBy] = useState<"recent" | "helpful">("helpful");
-  
+  const { t } = useTranslation();
+
   // Sort the reviews based on the selected sorting option
   const sortedReviews = [...reviews].sort((a, b) => {
     if (sortBy === "recent") {
@@ -44,10 +47,10 @@ const ReviewSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-          Opiniones  <span className="text-vr-neon ">de los clientes</span>
+          {t('reviews_title')} <span className="text-vr-neon ">{t('reviews_title_2')}</span>
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-          Vea lo que dicen nuestros clientes sobre su experiencia de RV con nuestros productos.
+          {t('reviews_subtitle')}
           </p>
         </div>
        {/*
@@ -87,14 +90,15 @@ const ReviewSection = () => {
                   />
                   <div className="ml-4">
                     <h4 className="text-white font-medium">{review.name}</h4>
-                    <p className="text-gray-400 text-sm">Verified Purchase</p>
+                    <p className="text-gray-400 text-sm">{review.role}</p>
                   </div>
                 </div>
-                <div className="text-gray-400 text-sm">
+               {/* <div className="text-gray-400 text-sm">
                   {new Date(review.date).toLocaleDateString()}
                 </div>
+                */}
               </div>
-              
+              {/*}
               <div className="mb-3">
                 <div className="flex items-center mb-1">
                   {[...Array(5)].map((_, i) => (
@@ -107,9 +111,9 @@ const ReviewSection = () => {
                 </div>
                 <h5 className="text-white font-semibold mb-2">{review.title}</h5>
               </div>
-              
-              <p className="text-gray-300 mb-4">{review.content}</p>
-              
+              */}
+              <p className="text-gray-300 mb-4">{t(review.content)}</p>
+              {/*}
               <div className="flex items-center justify-between">
                 <button className="text-sm text-gray-400 hover:text-white flex items-center">
                   <span className="mr-1">Helpful ({review.helpful})</span>
@@ -121,6 +125,7 @@ const ReviewSection = () => {
                   Report
                 </button>
               </div>
+                */}
             </div>
           ))}
         </div>

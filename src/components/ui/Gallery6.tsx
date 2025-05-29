@@ -2,7 +2,7 @@
 
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useEffect, useState } from "react";
-
+import { useTranslation } from 'react-i18next';
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -26,7 +26,7 @@ interface Gallery6Props {
 }
 
 const Gallery6 = ({
-  heading = "Catalgo completo",
+  heading = "Descubre nuestro catálogo",
   demoUrl = "https://www.shadcnblocks.com",
   items = [
     {
@@ -88,22 +88,24 @@ const Gallery6 = ({
       carouselApi.off("select", updateSelection);
     };
   }, [carouselApi]);
+  const { t } = useTranslation();
+
   return (
+    
     <section className="py-32">
       <div className="container ">
         
         <div className="mb-8 flex flex-col justify-between md:mb-14 md:flex-row md:items-end lg:mb-16 ">
           <div>
             <h2 className="mb-3 text-3xl font-semibold md:mb-4 md:text-4xl lg:mb-6">
-              {heading}
+              {t('gallery_heading')}
             </h2>
             <a
               href={demoUrl}
               className="group flex items-center gap-1 text-sm font-medium md:text-base lg:text-lg"
             >
-              Ver catalogo completo
-              <ArrowUpRight className="size-4 transition-transform group-hover:translate-x-1" />
-            </a>
+              {t('gallery_see_all')}
+              </a>
           </div>
           <div className="mt-8 flex shrink-0 items-center justify-start gap-2">
             <Button
@@ -170,7 +172,7 @@ const Gallery6 = ({
                     {item.summary}
                   </div>
                   <div className="flex items-center text-sm">
-                   Ver experiencia{" "}
+                   {t('gallery_see_experience')}{" "}
                     <ArrowRight className="ml-2 size-5 transition-transform group-hover:translate-x-1" />
                   </div>
                 </a>

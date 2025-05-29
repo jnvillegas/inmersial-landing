@@ -12,34 +12,36 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center mb-4">
-              
+
               <div className="flex items-center">
                 <div className="flex items-center">
                   <img className="h-auto w-[250px]" src="/22 - IsoLogo vBlanco Horizontal (1).png" />
                 </div>
               </div>
             </div>
-            <p className="text-gray-400 mb-6">
-            Experimenta la realidad reimaginada con nuestra vanguardista tecnología de RV. Sumérgete en un mundo digital en constante evolución donde la creatividad no tiene límites.
+            <p className="text-gray-400 mb-6"> The future of sales is here! </p>
+            <p className="text-gray-400 mb-6"> Smart, Plug & Play, Cross Platform, User Friendly </p>
 
-
-            </p>
             <div className="flex space-x-4">
+               <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
+                <Linkedin className="h-5 w-5" />
+              </a>
+               <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
+                <Youtube className="h-5 w-5" />
+              </a>
+              {/*}
               <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
-                <Youtube className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-inmersial-cyan transition-colors">
-                <Linkedin className="h-5 w-5" />
-              </a>
+             */}
+             
+              
             </div>
           </div>
 
@@ -68,15 +70,16 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-6">Contacto</h3>
             <ul className="space-y-3 mb-6">
-              <li className="text-gray-400">1234 VR Street</li>
-              <li className="text-gray-400">Tech City, TC 98765</li>
-              <li className="text-gray-400">support@inmersial.com</li>
-              <li className="text-gray-400">+1 (555) 123-4567</li>
-            </ul>
-            <button className="bg-gradient-to-r from-inmersial-light-blue to-inmersial-cyan hover:opacity-90 text-inmersial-dark-blue font-semibold py-2 px-4 rounded-md shadow-inmersial neon-button transition-all duration-300 flex items-center">
+              <li className="text-gray-400">contacto@griftin.com.ar</li>
+              <li className="text-gray-400">Solicita tu demo gratuita</li><button className="bg-gradient-to-r from-inmersial-light-blue to-inmersial-cyan hover:opacity-90 text-inmersial-dark-blue font-semibold py-2 px-4 rounded-md shadow-inmersial neon-button transition-all duration-300 flex items-center">
               <ShoppingCart className="mr-2 h-4 w-4" />
               Buy Now
             </button>
+              <li className="text-gray-400">Powered by</li> <div className="flex items-center">
+                  <img className="h-auto w-[250px]" src="/22 - IsoLogo vBlanco Horizontal (1).png" />
+                </div>
+            </ul>
+            
           </div>
         </div>
 
@@ -85,7 +88,7 @@ const Footer = () => {
             &copy; 2025 INMERSIAL. All rights reserved.
           </p>
 
-         
+
         </div>
       </div>
     </footer>

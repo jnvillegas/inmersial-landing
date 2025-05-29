@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { Check, ShoppingCart } from 'lucide-react';
-import ComparisonTool from './ComparisonTool';
+import { useTranslation } from 'react-i18next';
 
 const plans = [
   {
@@ -11,9 +11,9 @@ const plans = [
     price: '$150',
     interval: 'mensual',
     features: [
-      '3 Recorridos 360°',
-      '1 Videos de experiencia Inmersiva',
-      'Analítica básicas',
+      'subscription_features.360_tours_3',
+      'subscription_features.immersive_videos_1',
+      'subscription_features.landing_page_1',
 
     ],
     popular: false
@@ -27,9 +27,9 @@ const plans = [
     discount: '10% de Descuento',
     interval: 'anual',
     features: [
-      '3 Recorridos 360°',
-      '1 Videos de experiencia Inmersiva',
-      'Analítica básicas'
+      'subscription_features.360_tours_3',
+      'subscription_features.immersive_videos_1',
+      'subscription_features.landing_page_1',
     ],
     popular: false
   },
@@ -40,10 +40,10 @@ const plans = [
     price: '$135',
     interval: 'mensual',
     features: [
-      '10 Recorridos 360°',
-      '5 Videos de experiencia Inmersiva',
-      '1 Desarrollo de Landing page',
-      'Analítica personalizadas'
+      'subscription_features.360_tours_10',
+      'subscription_features.immersive_videos_5',
+      'subscription_features.landing_page_unlimited',
+      'subscription_features.basic_analytics'
     ],
     popular: false
   },
@@ -56,10 +56,10 @@ const plans = [
     discount: '10% de Descuento',
     interval: 'anual',
     features: [
-      '10 Recorridos 360°',
-      '5 Videos de experiencia Inmersiva',
-      '1 Desarrollo de Landing page',
-      'Analítica personalizadas'
+      'subscription_features.360_tours_10',
+      'subscription_features.immersive_videos_5',
+      'subscription_features.landing_page_unlimited',
+      'subscription_features.basic_analytics'
     ],
     popular: false
   },
@@ -67,13 +67,13 @@ const plans = [
     id: 'CorporateMonthly',
     name: 'Inmersial Corporate Plan',
     period: 'Mensual',
-    price: 'Escribenos',
+    price: 'subscription_contact_us',
     interval: 'mensual',
     features: [
-      'Recorridos 360°',
-      'Videos de experiencia Inmersiva',
-      'Desarrollo de Landing page',
-      'Analítica personalizadas'
+      'subscription_features.360_tours_unlimited',
+      'subscription_features.immersive_videos_unlimited',
+      'subscription_features.landing_page_unlimited',
+      'subscription_features.custom_analytics'
     ],
     popular: false
   },
@@ -81,20 +81,22 @@ const plans = [
     id: 'CorporateAnnual',
     name: 'Inmersial Corporate Plan',
     period: 'Anual',
-    price: 'Escribenos',
+    price: 'subscription_contact_us',
 
     interval: 'anual',
     features: [
-      'Recorridos 360°',
-      'Videos de experiencia Inmersiva',
-      'Desarrollo de Landing page',
-      'Analítica personalizadas'
+      'subscription_features.360_tours_unlimited',
+      'subscription_features.immersive_videos_unlimited',
+      'subscription_features.landing_page_unlimited',
+      'subscription_features.custom_analytics'
     ],
     popular: false
   }
 
 
 ];
+
+
 
 const SubscriptionSection = () => {
   const [showComparison, setShowComparison] = useState(false);
@@ -104,6 +106,7 @@ const SubscriptionSection = () => {
   const filteredPlans = plans.filter(plan =>
     activeTab === 'Mensual' ? plan.period === 'Mensual' : plan.period === 'Anual'
   );
+  const { t } = useTranslation();
 
   return (
     <section id="pricing" className="py-20 bg-cyber-gradient/80 relative">
@@ -116,10 +119,10 @@ const SubscriptionSection = () => {
       <div className="container mx-auto px-6  relative">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            <span className="text-vr-neon ">Suscríbase</span> a VR Excellence
+            {t('subscription_title')}
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Elige el plan perfecto para desbloquear tu viaje de realidad virtual. Todas las suscripciones incluyen acceso a nuestra biblioteca básica de aplicaciones y actualizaciones periódicas.
+            {t('subscription_intro')}
           </p>
         </div>
 
@@ -132,7 +135,7 @@ const SubscriptionSection = () => {
               }`}
             onClick={() => setActiveTab('Mensual')}
           >
-            Mensual
+            {t('subscription_monthly')}
           </button>
           <button
             className={`px-6 py-2 rounded-t-md font-semibold transition-colors ml-2 ${activeTab === 'Anual'
@@ -141,7 +144,7 @@ const SubscriptionSection = () => {
               }`}
             onClick={() => setActiveTab('Anual')}
           >
-            Anual
+            {t('subscription_annual')}
           </button>
         </div>
         {/* Cards */}
@@ -158,7 +161,7 @@ const SubscriptionSection = () => {
             >
               {plan.popular && (
                 <div className="bg-vr-neon text-black py-1 px-4 text-xs font-bold text-center">
-                  MOST POPULAR
+                  {t('subscription_most_popular')}
                 </div>
               )}
 
@@ -166,7 +169,7 @@ const SubscriptionSection = () => {
                 <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
                 {/*<p className="text-gray-400 mb-4">{plan.period}</p>*/}
                 <div className="mb-6">
-                  <span className="text-3xl font-bold text-white">{plan.price}</span>
+                  <span className="text-3xl font-bold text-white">{plan.price.startsWith('subscription_') ? t(plan.price) : plan.price}</span>
                   <span className="text-gray-400 ml-2">/ {plan.interval}</span>
                   {activeTab === 'Anual' && plan.originalPrice && plan.discount && (
                     <div className="flex items-center mt-2 space-x-3">
@@ -181,7 +184,7 @@ const SubscriptionSection = () => {
                   {plan.features.map((feature, index) => (
                     <li key={index} className="flex items-start">
                       <Check className="h-5 w-5 text-vr-neon mr-2 flex-shrink-0 mt-0.5" />
-                      <span className="text-gray-300">{feature}</span>
+                      <span className="text-gray-300">{t(feature)}</span>
                     </li>
                   ))}
                 </ul>
@@ -194,7 +197,7 @@ const SubscriptionSection = () => {
                       }`}
                   >
                     <ShoppingCart className="mr-2 h-5 w-5" />
-                    Subscribe
+                    {t('subscription_subscribe')}
                   </button>
                 </div>
               </div>
