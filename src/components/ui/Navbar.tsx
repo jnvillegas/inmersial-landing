@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="#contact" className="text-white hover:text-inmersial-cyan transition-colors">{t('testimonials')}</a>
         </div>
         <div className="hidden md:flex items-center space-x-6">
-          <button className="bg-transparent border border-inmersial-light-blue text-inmersial-light-blue hover:bg-inmersial-light-blue/10 transition-colors py-1 px-2 rounded-md flex items-center neon-button">
+          <button  className="bg-transparent border border-inmersial-light-blue text-inmersial-light-blue hover:bg-inmersial-light-blue/10 transition-colors py-1 px-2 rounded-md flex items-center neon-button">
             {t('sign_in')}
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>

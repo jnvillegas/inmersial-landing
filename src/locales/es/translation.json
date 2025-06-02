@@ -55,10 +55,9 @@
     "custom_analytics": "Analítica personalizadas",
     "subscription_monthly": "Mensual",
     "subscription_annual": "Anual"
-    
   },
-   "reviews_title": "Casos de ",
-   "reviews_title_2": "Éxito",
+  "reviews_title": "Casos de ",
+  "reviews_title_2": "Éxito",
   "reviews_subtitle": "Conoce a las empresas que ya están transformando su forma de vender",
   "reviews_sort_helpful": "Más útiles",
   "reviews_sort_recent": "Más recientes",
@@ -66,19 +65,29 @@
   "reviews_report": "Reportar",
   "reviews_load_more": "Cargar más testimonios",
   "reviews": {
-  "1": {
-    "name": "FELIPE SEIA",
-    "title": "Tecnología VR revolucionaria",
-    "content": "Desde que comenzamos a trabajar con Inmersial en AGN, transformamos por completo la forma en que presentamos nuestros productos y servicios. Incorporar experiencias en realidad aumentada, recorridos 360° e incluso entornos en metaverso convirtió cada presentación en algo mucho más impactante, inmersivo y memorable. En sectores como el automotor y el inmobiliario, donde la visualización es clave, contar con una herramienta como Inmersial marca una diferencia real. Nuestros clientes ya no tienen que imaginar cómo es un vehículo o una propiedad: ahora pueden experimentarlo en primera persona, desde cualquier lugar y con cualquier dispositivo. Si buscás destacar, innovar y vender más, te recomiendo Inmersial sin dudar. Es una ventaja competitiva concreta en un mercado cada vez más exigente.",
-    "product": "Pro VR Headset",
-    "role": "Gerente de Marketing de AGN Corp"
+    "1": {
+      "name": "FELIPE SEIA",
+      "title": "Tecnología VR revolucionaria",
+      "content": "Inmersial transformó por completo la forma en que presentamos nuestros productos. Ahora nuestros clientes pueden vivir la experiencia de un vehículo o propiedad en 360°, desde cualquier lugar. Una herramienta clave para destacar, innovar y vender más.",
+      "product": "Pro VR Headset",
+      "role": "Gerente de Marketing de AGN Corp"
+    },
+    "2": {
+      "name": "Alina Nowaczek",
+      "title": "Ideal para trabajo y entretenimiento",
+      "content": "Inmersial transforma la manera de vender al ofrecer experiencias interactivas en tiempo real que generan confianza, aumentan la conversión y aceleran la toma de decisiones. Más que una tendencia, es una herramienta estratégica para destacar frente a la competencia.",
+      "product": "Pro VR Headset",
+      "role": "CEO Transcontinental Trade Consortium LLC,"
+    }
   },
-  "2": {
-    "name": "Alina Nowaczek",
-    "title": "Ideal para trabajo y entretenimiento",
-    "content": "Desde una perspectiva de ventas, Inmersial aumenta significativamente la interacción y las tasas de conversión. Al brindar a los clientes potenciales la oportunidad de ver un producto o espacio en tiempo real y de forma interactiva, elimina muchas dudas y ayuda a generar confianza más rápidamente. Es una herramienta innovadora que no solo capta la atención, sino que también acorta el proceso de toma de decisiones. En mi opinión, Inmersial no es solo una moda pasajera, sino una herramienta estratégica para las empresas que desean mantenerse a la vanguardia de la competencia y ofrecer a sus clientes experiencias inolvidables.",
-    "product": "Pro VR Headset",
-    "role": "CEO Transcontinental Trade Consortium LLC,"
+  "footer": {
+    "footer_subtitle": "El futuro de las ventas está aquí!",
+    "terms": "Política de Privacidad",
+    "privacy": "Politica de Seguridad y Calidad",
+    "contact": "Contacto",
+    "request_demo": "Solicita tu demo gratuita",
+    "footer_copyright": "2023 Inmersial. Todos los derechos reservados.",
+    "footer_demo_form_send": "Enviar Pedido",
+     "footer_listen_spotify": "Escucha el Podcast de INMERSIAL"
   }
-}
 }

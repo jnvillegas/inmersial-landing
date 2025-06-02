@@ -6,7 +6,7 @@ const reviews = [
   {
     id: 1,
     name: "FELIPE SEIA",
-    avatar: "../public/felipeseia.png",
+    avatar: "/src/assets/felipeseia.png",
     rating: 5,
     date: "2025-04-15",
     title: "Game-changing VR technology",
@@ -18,7 +18,7 @@ const reviews = [
   {
     id: 2,
     name: "Alina Nowaczek",
-    avatar: "../public/foto alina.png",
+    avatar: "/src/assets/foto alina.png",
     rating: 4,
     date: "2025-04-02",
     title: "Great for work and entertainment",

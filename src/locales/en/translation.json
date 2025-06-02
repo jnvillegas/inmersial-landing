@@ -68,16 +68,26 @@
   "1": {
     "name": "FELIPE SEIA",
     "title": "Game-changing VR technology",
-    "content": "Since we started working with Inmersial at AGN, we completely transformed the way we present our products and services. Incorporating augmented reality experiences, 360° tours, and even metaverse environments made every presentation much more impactful, immersive, and memorable. In sectors like automotive and real estate, where visualization is key, having a tool like Inmersial makes a real difference. Our clients no longer have to imagine what a vehicle or property is like: now they can experience it firsthand, from anywhere and with any device. If you want to stand out, innovate, and sell more, I highly recommend Inmersial. It's a real competitive advantage in an increasingly demanding market.",
+    "content": "Inmersial completely transformed the way we present our products. Now our customers can experience a vehicle or property in 360°, from anywhere. A key tool for standing out, innovating, and selling more.",
     "product": "Pro VR Headset",
     "role": "Marketing Manager at AGN Corp"
   },
   "2": {
     "name": "Alina Nowaczek",
     "title": "Great for work and entertainment",
-    "content": "From a sales perspective, Inmersial significantly increases engagement and conversion rates. By giving potential clients the opportunity to see a product or space in real time and interactively, it eliminates many doubts and helps build trust more quickly. It's an innovative tool that not only grabs attention but also shortens the decision-making process. In my opinion, Inmersial is not just a passing trend, but a strategic tool for companies that want to stay ahead of the competition and offer their clients unforgettable experiences.",
+    "content": "Immersial transforms the way we sell by offering real-time interactive experiences that build trust, increase conversion, and accelerate decision-making. More than a trend, it's a strategic tool to stand out from the competition.",
     "product": "Pro VR Headset",
     "role": "CEO Transcontinental Trade Consortium LLC,"
   }
-}
+},
+  "footer": {
+    "footer_subtitle": "The future of sales is here!",
+    "terms": "Privacy Policy",
+    "privacy": "Security and Quality Policy",
+    "contact": "Contact Us",
+    "request_demo": "Request a demo",
+    "footer_copyright": "2023 Inmersial. All rights reserved ",
+    "footer_demo_form_send": "Send request",
+    "footer_listen_spotify": "Listen to the INMERSIAL Podcast"
+  }
 }

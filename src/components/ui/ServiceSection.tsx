@@ -1,12 +1,13 @@
 
 import { useTranslation } from 'react-i18next';
-import smartIcon from '/public/2.png';
-import plugIcon from '/public/3.png';
-import userIcon from '/public/4.png';
-import crossIcon from '/public/5.png';
+import smartIcon from '/src/assets/2.png';
+import plugIcon from '/src/assets/3.png';
+import userIcon from '/src/assets/4.png';
+import crossIcon from '/src/assets/5.png';
 /*import plugIcon from '@/public/plug.png';
 import userIcon from '@/public/user.png';
 import crossIcon from '@/public/cross.png';*/
+
 
 
 

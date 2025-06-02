@@ -41,7 +41,7 @@ const ProductSection = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-vr-neon/20 rounded-lg blur-xl"></div>
               <img
-                src="../public/imagen 1 .png"
+                src="/src/assets/imagen 1 .png  "
                 alt="Person wearing VR headset"
                 className="relative z-10 rounded-lg border border-vr-neon/30 shadow-neon"
                 width="500"
@@ -56,7 +56,7 @@ const ProductSection = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-vr-neon/20 rounded-lg blur-xl"></div>
               <img
-                src="../public/imagen 2 .png"
+                src="/src/assets/imagen 2 .png"
                 alt="VR headset"
                 className="relative z-10 rounded-lg border border-vr-neon/30 shadow-neon"
                 width="500"
